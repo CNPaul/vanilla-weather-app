@@ -1,0 +1,80 @@
+body {
+  background-image: url(download.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: #0b5ed7;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 5px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  background: linear-gradient(
+    130deg,
+    rgba(239, 244, 244, 0.8) 0%,
+    rgba(229, 229, 237, 0.8) 31%,
+    rgba(185, 185, 204, 0.8) 60%,
+    rgba(156, 157, 180, 0.8) 100%
+  );
+  border: 1px solid #8d98a1;
+  border-radius: 15px;
+  box-shadow: 3px 12px 20px #685856f1;
+  padding: 20px 30px 30px;
+}
+
+/* Temperature Section */
+
+.weather-temperature img {
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+  height: 64px;
+  width: 64px;
+}
+
+.weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
+/* Link to my Source code */
+small {
+  display: block;
+  margin-top: 20px;
+}
