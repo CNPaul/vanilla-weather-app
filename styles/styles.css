@@ -131,6 +131,22 @@ li {
   color: #0b5ed7;
 }
 
+#celsius-link {
+  text-decoration: none;
+}
+
+#fahrenheit-link {
+  text-decoration: none;
+}
+
+.weather-temperature .active {
+  color: #000;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
 /* Link to my Source code */
 small {
   display: block;
