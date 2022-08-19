@@ -56,14 +56,15 @@ li {
   margin-right: 5px;
   display: inline-block;
   vertical-align: top;
-  height: 64px;
-  width: 64px;
+  height: 100px;
+  width: 100px;
 }
 
 .weather-temperature strong {
+  padding-right: 5px;
   color: rgb(33, 33, 33);
   font-size: 64px;
-  line-height: 1;
+  line-height: 1.5;
   font-weight: 400;
 }
 
@@ -71,6 +72,29 @@ li {
   position: relative;
   font-size: 16px;
   top: -34px;
+}
+
+#description::first-letter {
+  text-transform: capitalize;
+}
+
+#description {
+  color: #0b5ed7;
+}
+
+#humidity {
+  color: #0b5ed7;
+}
+
+#wind {
+  color: #0b5ed7;
+}
+.humidity-percentage {
+  color: #0b5ed7;
+}
+
+.wind-unit {
+  color: #0b5ed7;
 }
 
 /* Link to my Source code */
