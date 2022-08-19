@@ -37,13 +37,7 @@ li {
 }
 
 .weather-app {
-  background: linear-gradient(
-    130deg,
-    rgba(239, 244, 244, 0.8) 0%,
-    rgba(229, 229, 237, 0.8) 31%,
-    rgba(185, 185, 204, 0.8) 60%,
-    rgba(156, 157, 180, 0.8) 100%
-  );
+  background: linear-gradient(to top, #e4b6b1 0%, #f5efef 100%);
   border: 1px solid #8d98a1;
   border-radius: 15px;
   box-shadow: 3px 12px 20px #685856f1;
