@@ -4,7 +4,37 @@ body {
   background-size: cover;
 }
 
+/* The Search Engine Form Section */
+
+.form-search,
+.form-submit {
+  font-family: "Ubuntu", sans-serif;
+  box-shadow: 5px 5px 7px #8f7e7bf1;
+  border-radius: 20px;
+}
+
+.form-search:focus {
+  border: 1px solid #8d98a1;
+  outline: none;
+  background: rgba(255, 255, 255, 0.63);
+  box-shadow: 5px 5px 7px #a39492f1;
+}
+
+.form-submit:hover {
+  background: #143868;
+  border: 1px solid #211f49;
+}
+
+.city-search {
+  color: white;
+  padding: 11px 14px 7px;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+}
+
+/* The Overview section and feature */
 h1 {
+  font-family: "Roboto Slab", serif;
   color: #0b5ed7;
   font-size: 30px;
   font-weight: 500;
@@ -18,6 +48,7 @@ ul {
 }
 
 li {
+  font-family: "Ubuntu", sans-serif;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -31,13 +62,19 @@ li {
   margin-bottom: 20px;
 }
 
+/* The container Section */
+
 .wrapper {
   max-width: 600px;
   margin: 30px auto;
 }
 
 .weather-app {
-  background: linear-gradient(to top, #e4b6b1 0%, #f5efef 100%);
+  background: linear-gradient(
+    180.3deg,
+    rgb(221, 221, 221) 5.5%,
+    rgb(156, 181, 204) 90.2%
+  );
   border: 1px solid #8d98a1;
   border-radius: 15px;
   box-shadow: 3px 12px 20px #685856f1;
@@ -55,6 +92,8 @@ li {
 }
 
 .weather-temperature strong {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
   padding-right: 5px;
   color: rgb(33, 33, 33);
   font-size: 64px;
@@ -63,6 +102,7 @@ li {
 }
 
 .weather-temperature .units {
+  font-family: "Ubuntu", sans-serif;
   position: relative;
   font-size: 16px;
   top: -34px;

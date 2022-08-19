@@ -28,8 +28,6 @@ function formatDate(timestamp) {
 // The function that handles the temperature section, humidty, wind and icon API integration.
 
 function displayTemperature(response) {
-  console.log(response.data);
-
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let weatherDescription = document.querySelector("#description");
@@ -53,7 +51,21 @@ function displayTemperature(response) {
 
 // First API call to the function displayTemperature
 
-let apiKey = "134cd70ea28a3c7e7876ec215d70c961";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=New York&appid=${apiKey}&units=metric`;
+function searchCity(city) {
+  let apiKey = "134cd70ea28a3c7e7876ec215d70c961";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-axios.get(apiUrl).then(displayTemperature);
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+searchCity("New York");
+// The Search Engine Section
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  searchCity(cityInputElement.value);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);

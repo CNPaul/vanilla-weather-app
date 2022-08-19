@@ -17,6 +17,15 @@
     <!-- Axios CDN -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- link to my CSS file -->
 
     <link rel="stylesheet" href="styles/styles.css" />
@@ -27,13 +36,13 @@
     <div class="container">
       <div class="wrapper">
         <div class="weather-app">
-          <form id="search-form" class="mb-3">
+          <form id="search-form" class="mb-3 city-search">
             <div class="row">
               <div class="col-9">
                 <input
                   type="search"
                   placeholder="Type a city"
-                  class="form-control"
+                  class="form-control form-search"
                   id="city-input"
                   autocomplete="off"
                   autofocus="on"
@@ -43,7 +52,7 @@
                 <input
                   type="submit"
                   value="search"
-                  class="btn btn-primary w-100"
+                  class="btn btn-primary w-100 form-submit"
                 />
               </div>
             </div>
