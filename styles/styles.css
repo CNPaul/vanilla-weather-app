@@ -2,6 +2,7 @@ body {
   background-image: url(download.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 100%;
 }
 
 /* The Search Engine Form Section */
@@ -80,7 +81,7 @@ li {
 /* The container Section */
 
 .wrapper {
-  max-width: 600px;
+  max-width: 696px;
   margin: 30px auto;
 }
 
@@ -129,28 +130,25 @@ li {
 
 #description {
   color: #0b5ed7;
+  font-family: "Roboto Slab", serif;
 }
 
-#humidity {
-  color: #0b5ed7;
-}
-
-#wind {
-  color: #0b5ed7;
-}
-.humidity-percentage {
-  color: #0b5ed7;
-}
-
+#wind,
+#humidity,
+.humidity-percentage,
 .wind-unit {
   color: #0b5ed7;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
 }
 
 #celsius-link {
+  font-family: "Roboto Slab", serif;
   text-decoration: none;
 }
 
 #fahrenheit-link {
+  font-family: "Roboto Slab", serif;
   text-decoration: none;
 }
 
@@ -165,25 +163,32 @@ li {
 
 .weather-forecast {
   margin-top: 20px;
+  justify-content: space-around;
   text-align: center;
   color: #000;
 }
 
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .weather-forecast-temperature-max {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 13px;
+  font-family: "Roboto Slab", serif;
+  font-size: 17px;
   color: #0b5ed7;
+  font-weight: 400;
 }
 
 .weather-forecast-temperature-min {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 13px;
+  font-family: "Roboto Slab", serif;
+  font-size: 17px;
   color: #022353;
+  font-weight: 400;
+}
+
+hr {
+  margin: 0;
 }
 
 /* Link to my Source code */
@@ -191,6 +196,7 @@ small {
   font-family: "Roboto Slab", serif;
   display: block;
   margin-top: 20px;
+  font-size: 15px;
 }
 
 .open-source-link {
@@ -203,10 +209,34 @@ small {
   font-family: "Roboto Slab", serif;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   body {
     background-image: url(cloud-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: fit-content;
+  }
+
+  .weather-forecast-temperature-min,
+  .weather-forecast-temperature-max {
+    font-size: 15px;
+    line-height: 0;
+  }
+
+  .form-submit {
+    box-shadow: 5px 5px 7px #8f7e7bf1;
+    border-radius: 20px;
+  }
+
+  .city-search {
+    margin: 0;
+    padding: 11px 0px 7px;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+  }
+
+  .weather-temperature {
+    margin: 0;
+    padding: 0;
   }
 }
