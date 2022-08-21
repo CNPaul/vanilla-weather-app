@@ -151,4 +151,26 @@ function getForecast(coordinates) {
   axios.get(apiUrl).then(displayForecast);
 }
 
+// Geolocation Section (Current location)
+
+function showLocation(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+
+  let units = "metric";
+  let apiKey = "134cd70ea28a3c7e7876ec215d70c961";
+  let apiEndPoint = `https://api.openweathermap.org/data/2.5/weather`;
+  let apiUrl = `${apiEndPoint}?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+let locationButton = document.querySelector("#location-button");
+locationButton.addEventListener("click", CurrentGeo);
+
+function CurrentGeo() {
+  navigator.geolocation.getCurrentPosition(showLocation);
+}
+
+// City by default
+
 searchCity("New York");
