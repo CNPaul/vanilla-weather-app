@@ -11,6 +11,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   box-shadow: 5px 5px 7px #8f7e7bf1;
   border-radius: 20px;
+  position: relative;
 }
 
 .form-search:focus {
@@ -30,6 +31,20 @@ body {
   padding: 11px 14px 7px;
   transition: all 150ms ease-in-out;
   cursor: pointer;
+}
+
+.geo-icon {
+  padding: 11px 14px 7px;
+  color: #0b5ed7;
+  box-shadow: 5px 5px 7px #8f7e7bf1;
+  border-radius: 25px;
+  position: relative;
+}
+
+.geo-icon:hover {
+  color: #fff;
+  background: #143868;
+  border: 1px solid #211f49;
 }
 
 /* The Overview section and feature */
@@ -160,15 +175,38 @@ li {
 }
 
 .weather-forecast-temperature-max {
+  font-family: "Ubuntu", sans-serif;
   font-size: 13px;
+  color: #0b5ed7;
 }
 
 .weather-forecast-temperature-min {
+  font-family: "Ubuntu", sans-serif;
   font-size: 13px;
+  color: #022353;
 }
 
 /* Link to my Source code */
 small {
+  font-family: "Roboto Slab", serif;
   display: block;
   margin-top: 20px;
+}
+
+.open-source-link {
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.github-name {
+  font-family: "Roboto Slab", serif;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-image: url(cloud-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
