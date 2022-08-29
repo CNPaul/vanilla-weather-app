@@ -225,18 +225,20 @@ small {
 
   .form-submit {
     box-shadow: 5px 5px 7px #8f7e7bf1;
-    border-radius: 20px;
+    border-radius: 15px;
+    padding: 7px;
+    background: #0b5ed7;
+    color: #fff;
   }
 
   .city-search {
-    margin: 0;
-    padding: 11px 0px 7px;
+    margin: 7px;
+    padding: 0;
     transition: all 150ms ease-in-out;
     cursor: pointer;
   }
 
-  .weather-temperature {
-    margin: 0;
-    padding: 0;
+  input::value {
+    font-size: 1.2em;
   }
 }
